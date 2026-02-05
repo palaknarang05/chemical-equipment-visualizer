@@ -1,14 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o errexit
 
-# Navigate to backend folder
+# Go to backend
 cd backend
 
-# Install dependencies
-python3 -m pip install --upgrade pip
-python3 -m pip install -r requirements.txt
-
 # Run migrations
-python3 manage.py migrate
+python manage.py migrate --noinput
 
-# Start server
+# Start Django via gunicorn
 gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
