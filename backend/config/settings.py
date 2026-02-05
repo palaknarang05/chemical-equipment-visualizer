@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-    'equipment_api',
+    'equipment_api.apps.EquipmentApiConfig',
 ]
 
 MIDDLEWARE = [
