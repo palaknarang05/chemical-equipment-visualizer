@@ -6,10 +6,11 @@ import os
 from pathlib import Path
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 SECRET_KEY = 'django-insecure-chemical-equipment-visualizer-secret-key-2024'
