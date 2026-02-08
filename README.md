@@ -4,6 +4,13 @@
 
 A professional hybrid web and desktop application for analyzing and visualizing chemical equipment parameters. Built with Django REST Framework backend, React.js web frontend, and PyQt5 desktop frontend.
 
+##  Live Demo & Quick Access
+
+### Web Application
+
+**Frontend URL:** https://chemical-equipment-visualizer-a12f.onrender.com
+**Backend API:** https://chemical-equipment-backend-bjfj.onrender.com
+
 ##  Features
 
 ### Core Features
