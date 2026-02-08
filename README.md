@@ -8,8 +8,8 @@ A professional hybrid web and desktop application for analyzing and visualizing 
 
 ### Web Application
 
-**Frontend URL**: https://chemical-equipment-visualizer-a12f.onrender.com
-**Backend API**: https://chemical-equipment-backend-bjfj.onrender.com
+- **Frontend URL**: https://chemical-equipment-visualizer-a12f.onrender.com
+- **Backend API**: https://chemical-equipment-backend-bjfj.onrender.com
 
 ##  Features
 
