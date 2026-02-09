@@ -10,6 +10,16 @@ A professional hybrid web and desktop application for analyzing and visualizing 
 
 - **Frontend URL**: https://chemical-equipment-visualizer-a12f.onrender.com
 - **Backend API**: https://chemical-equipment-backend-bjfj.onrender.com
+  
+### Run on Desktop (No Installation)
+
+### Windows
+Double-click:
+ChemicalEquipmentVisualizer.bat
+
+### macOS
+Right-click → Open:
+ChemicalEquipmentVisualizer.command
 
 ##  Features
 
