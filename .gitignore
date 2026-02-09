@@ -18,3 +18,7 @@ dist/
 
 # OS
 .DS_Store
+
+frontend-desktop/*.pdf
+frontend-desktop/dist/
+__pycache__/

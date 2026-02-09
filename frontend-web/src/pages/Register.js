@@ -41,9 +41,9 @@ function Register({ setIsAuthenticated }) {
       setIsAuthenticated(true);
       navigate('/dashboard');
     } catch (err) {
-      const errorMessage = err.response?.data?.username?.[0] || 
-                          err.response?.data?.email?.[0] || 
-                          err.response?.data?.error || 
+      const errorMessage = err.response?.data?.username?.[0] ||
+                          err.response?.data?.email?.[0] ||
+                          err.response?.data?.error ||
                           'Registration failed. Please try again.';
       setError(errorMessage);
     } finally {

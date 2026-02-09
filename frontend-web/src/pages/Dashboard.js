@@ -75,9 +75,9 @@ function Dashboard({ setIsAuthenticated }) {
       await loadStatistics();
       e.target.value = '';
     } catch (error) {
-      setMessage({ 
-        type: 'error', 
-        text: error.response?.data?.error || 'Error uploading file. Please try again.' 
+      setMessage({
+        type: 'error',
+        text: error.response?.data?.error || 'Error uploading file. Please try again.'
       });
     } finally {
       setUploadLoading(false);
@@ -245,7 +245,7 @@ function Dashboard({ setIsAuthenticated }) {
 
         <div className="datasets-section">
           <h2>Your Datasets (Last 5)</h2>
-          
+
           {datasets.length === 0 ? (
             <div className="no-data">No datasets uploaded yet. Upload your first dataset above!</div>
           ) : (
@@ -254,27 +254,27 @@ function Dashboard({ setIsAuthenticated }) {
                 <div className="dataset-header">
                   <div className="dataset-title">{dataset.filename}</div>
                   <div className="dataset-actions">
-                    <button 
-                      onClick={() => handleViewDataset(dataset.id)} 
+                    <button
+                      onClick={() => handleViewDataset(dataset.id)}
                       className="btn-view"
                     >
                       View Details
                     </button>
-                    <button 
-                      onClick={() => handleGenerateReport(dataset.id)} 
+                    <button
+                      onClick={() => handleGenerateReport(dataset.id)}
                       className="btn-report"
                     >
                       Generate PDF
                     </button>
-                    <button 
-                      onClick={() => handleDeleteDataset(dataset.id)} 
+                    <button
+                      onClick={() => handleDeleteDataset(dataset.id)}
                       className="btn-delete"
                     >
                       Delete
                     </button>
                   </div>
                 </div>
-                
+
                 <div style={{ fontSize: '13px', color: '#718096', marginBottom: '12px' }}>
                   Uploaded: {new Date(dataset.upload_date).toLocaleString()}
                 </div>
@@ -305,7 +305,7 @@ function Dashboard({ setIsAuthenticated }) {
         {selectedDataset && (
           <div className="datasets-section" style={{ marginTop: '30px' }}>
             <h2>Dataset Details: {selectedDataset.dataset.filename}</h2>
-            
+
             <div className="charts-grid">
               {getTypeDistributionChart() && (
                 <div className="chart-container">
@@ -313,7 +313,7 @@ function Dashboard({ setIsAuthenticated }) {
                   <Pie data={getTypeDistributionChart()} options={{ maintainAspectRatio: true }} />
                 </div>
               )}
-              
+
               {getAveragesChart() && (
                 <div className="chart-container">
                   <div className="chart-title">Average Parameters</div>
@@ -325,16 +325,16 @@ function Dashboard({ setIsAuthenticated }) {
             {getParameterComparisonChart() && (
               <div className="chart-container" style={{ marginTop: '20px' }}>
                 <div className="chart-title">Parameter Comparison (First 10 Equipment)</div>
-                <Bar 
-                  data={getParameterComparisonChart()} 
-                  options={{ 
+                <Bar
+                  data={getParameterComparisonChart()}
+                  options={{
                     maintainAspectRatio: true,
                     scales: {
                       y: {
                         beginAtZero: true
                       }
                     }
-                  }} 
+                  }}
                 />
               </div>
             )}

@@ -25,7 +25,7 @@ from PyQt5.QtGui import QFont, QPalette, QColor, QLinearGradient, QPainter, QBru
 
 
 # API Configuration
-API_BASE_URL = "http://localhost:8000/api"
+API_BASE_URL = "https://chemical-equipment-backend-bjfj.onrender.com/api"
 
 # Professional Color Palette
 COLORS = {
