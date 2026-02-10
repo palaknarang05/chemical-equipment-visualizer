@@ -13,7 +13,7 @@ A professional hybrid web and desktop application for analyzing and visualizing 
   
 ### Demo Credentials (if admin account exists)
 **Username:** `admin`  
-**Password:** `admin123`
+**Password:** `admin12345`
   
 ###  Desktop Application - Step-by-Step Guide
 
