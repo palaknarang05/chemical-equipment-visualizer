@@ -11,15 +11,73 @@ A professional hybrid web and desktop application for analyzing and visualizing 
 - **Frontend URL**: https://chemical-equipment-visualizer-a12f.onrender.com
 - **Backend API**: https://chemical-equipment-backend-bjfj.onrender.com
   
-### Run on Desktop (No Installation)
+## 🖥️ Desktop Application - Step-by-Step Guide
 
-### Windows
-Double-click:
-ChemicalEquipmentVisualizer.bat
+### Prerequisites
+- Backend server must be running
+- Python 3.8+ installed
+- Dependencies installed
 
-### macOS
-Right-click → Open:
-ChemicalEquipmentVisualizer.command
+### Step 1: Start Backend Server (Required)
+```bash
+# Navigate to backend directory
+cd backend
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Start server
+python manage.py runserver
+```
+**Keep this terminal running.** Backend must be active for desktop app to work.
+
+### Step 2: Launch Desktop Application
+```bash
+# Open a NEW terminal window
+# Navigate to desktop frontend directory
+cd frontend-desktop
+
+# Activate virtual environment (if created)
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Run desktop application
+python main.py
+```
+
+### Step 3: Create Account (First Time Only)
+
+1. Click **"Create New Account"** button
+2. Fill in the registration form:
+   - **Username**: Choose a username (minimum 3 characters)
+   - **Email**: Enter your email address
+   - **Password**: Enter password (minimum 8 characters)
+   - **Confirm Password**: Re-enter the same password
+3. Click **"Register"**
+4. Wait for success message: "Account created successfully! Please login."
+5. **Close the desktop application**
+
+### Step 4: Restart and Login
+
+```bash
+# Rerun the desktop application
+python main.py
+```
+
+1. Enter your **username** and **password**
+2. Click **"Login"**
+3. You will be logged into the dashboard
+
+### Demo Credentials (if admin account exists)
+**Username:** `admin`  
+**Password:** `admin123`
+
+Note: Create your own account for full functionality.
 
 ##  Features
 
