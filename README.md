@@ -11,6 +11,10 @@ A professional hybrid web and desktop application for analyzing and visualizing 
 - **Frontend URL**: https://chemical-equipment-visualizer-a12f.onrender.com
 - **Backend API**: https://chemical-equipment-backend-bjfj.onrender.com
   
+### Demo Credentials (if admin account exists)
+**Username:** `admin`  
+**Password:** `admin123`
+  
 ###  Desktop Application - Step-by-Step Guide
 
 ### Prerequisites
@@ -73,11 +77,6 @@ python main.py
 2. Click **"Login"**
 3. You will be logged into the dashboard
 
-### Demo Credentials (if admin account exists)
-**Username:** `admin`  
-**Password:** `admin123`
-
-Note: Create your own account for full functionality.
 
 ##  Features
 
@@ -170,7 +169,7 @@ chemical-equipment-visualizer/
 ###  **Demo Login Credentials**
 
 **Username:** `admin`  
-**Password:** `admin123`
+**Password:** `admin12345`
 
 ### 1. Backend Setup (Django)
 
