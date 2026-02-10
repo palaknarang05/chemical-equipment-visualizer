@@ -11,7 +11,7 @@ A professional hybrid web and desktop application for analyzing and visualizing 
 - **Frontend URL**: https://chemical-equipment-visualizer-a12f.onrender.com
 - **Backend API**: https://chemical-equipment-backend-bjfj.onrender.com
   
-## 🖥️ Desktop Application - Step-by-Step Guide
+###  Desktop Application - Step-by-Step Guide
 
 ### Prerequisites
 - Backend server must be running
